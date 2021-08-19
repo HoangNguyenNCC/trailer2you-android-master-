@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.applutions.t2y.customViews.BoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reschedule Request"
+            android:textColor="@color/themeDark"
+            android:textSize="@dimen/text_22_sp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/ui_10_dp"
+            android:layout_margin="@dimen/ui_10_dp"/>
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calenderView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/ui_12_dp"
+            android:layout_marginEnd="@dimen/ui_12_dp"
+            app:abbreviationsLabelsColor="@color/black"
+            app:headerColor="@color/themeDark"
+            app:headerLabelColor="@color/white"
+            app:selectionColor="@color/themeDark"
+            app:swipeEnabled="true"
+            app:todayLabelColor="@color/themeLight"
+            app:type="range_picker"
+            app:selectionLabelColor="@color/white"
+            />
+        <RelativeLayout
+            android:id="@+id/lytTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/ui_15_dp">
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_18_sp"
+                    />
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:id="@+id/txtStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18_sp"
+                    android:layout_marginTop="@dimen/ui_8_dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/ui_15_dp">
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Time"
+                    android:layout_gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_18_sp"
+                    />
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:id="@+id/txtEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Time"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18_sp"
+                    android:layout_marginTop="@dimen/ui_8_dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.applutions.t2y.customViews.BoldTextView
+            android:id="@+id/btnRecheduleBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/ui_15_dp"
+            android:background="@drawable/dark_rounded_button"
+            android:gravity="center"
+            android:paddingStart="@dimen/ui_30_dp"
+            android:paddingTop="@dimen/ui_10_dp"
+            android:paddingEnd="@dimen/ui_30_dp"
+            android:paddingBottom="@dimen/ui_10_dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14_sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_trailer_details"
+    app:startDestination="@id/trailerDetailsFragment">
+
+    <fragment
+        android:id="@+id/trailerDetailsFragment"
+        android:name="com.applutions.t2y.ui.trailerDetails.details.TrailerDetailsFragment"
+        android:label="fragment_trailer_details"
+        tools:layout="@layout/fragment_trailer_details" >
+        <action
+            android:id="@+id/action_trailerDetailsFragment_to_trailerUpsellFragment2"
+            app:destination="@id/trailerUpsellFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/trailerUpsellFragment"
+        android:name="com.applutions.t2y.ui.trailerDetails.upsell.TrailerUpsellFragment"
+        android:label="fragment_trailer_upsell"
+        tools:layout="@layout/fragment_trailer_upsell" >
+        <action
+            android:id="@+id/action_trailerUpsellFragment_to_trailerDetailsFragment2"
+            app:destination="@id/trailerDetailsFragment" />
+    </fragment>
+</navigation>

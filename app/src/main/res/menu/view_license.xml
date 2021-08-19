@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/view_license_option"
+        android:title="View License"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/camera_selection"
+        android:icon="@drawable/ic_camera_blue"
+        android:title="Update License"
+        android:visible="true" />
+
+</menu>

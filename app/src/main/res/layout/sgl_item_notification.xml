@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/ui_15_dp"
+    android:layout_marginTop="@dimen/ui_10_dp"
+    android:layout_marginEnd="@dimen/ui_15_dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/round_square_white_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/imgTrailer"
+                android:layout_width="@dimen/ui_80_dp"
+                android:layout_height="@dimen/ui_80_dp"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/StatusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Hello World"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/txtStatusSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Waiting for approval"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_12_sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/StatusText">
+                    <TextView
+                        android:id="@+id/txtTrailerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trailer Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize = "14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtLicenseeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Licensee Name"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_12_sp"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content">-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        android:layout_margin="5dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:background="@drawable/bg_card">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgTrailer"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="85dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:srcCompat="@tools:sample/avatars"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtTrailerName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="@font/newyorkextralargemedium"-->
+<!--                android:text="Trailer Name"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/imgTrailer"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtLicenseeName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/newyorkextralargemedium"-->
+<!--                android:text="Licensee Name"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/imgTrailer"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txtTrailerName" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtStatus"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:fontFamily="@font/newyorkextralargemedium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtStatusSub"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:fontFamily="@font/newyorkextralargemedium"-->
+<!--                android:text="Distance"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txtStatus" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

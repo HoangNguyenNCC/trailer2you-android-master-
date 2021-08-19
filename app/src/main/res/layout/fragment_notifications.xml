@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refresh_notifications"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.notifications.NotificationsFragment">
+
+        <ProgressBar
+            android:id="@+id/pb_loading_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.applutions.t2y.customViews.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_20_dp"
+                android:gravity="center_horizontal"
+                android:text="Dont Blink"
+                android:textAllCaps="true"
+                android:letterSpacing="0.14"
+                android:fontFamily="@font/avenirnext_demibold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_12_sp" />
+
+            <com.applutions.t2y.customViews.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/newyorkextralargemedium"
+                android:gravity="center_horizontal"
+                android:text="Reminders and \nNotification"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_22_sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rsvNotification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ui_10_dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:visibility="visible"
+                tools:listitem="@layout/sgl_item_notification" />
+
+            <com.applutions.t2y.customViews.RegularTextView
+                android:id="@+id/txtNoRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="No Remnders / Notification, yet!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18_sp"
+                android:layout_marginTop="@dimen/ui_30_dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

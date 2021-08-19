@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/view_owner_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_owner_button"
+                app:layout_constraintBottom_toBottomOf="@+id/owner_name_rent_trailer_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/owned_by_rent_trailer_fragment"
+                app:layout_constraintTop_toTopOf="@+id/owned_by_rent_trailer_fragment" />
+
+            <Button
+                android:id="@+id/rent_trailer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/themeDark"
+                android:padding="16dp"
+                android:text=" Rent Trailer"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_cost_rent_trailer_fragment" />
+
+            <ImageView
+                android:id="@+id/trailer_image_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_name_rent_trailer_fragment"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/trailer_insuarance_response_rent_trailer_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintEnd_toEndOf="@+id/trailer_size_response_rent_trailer_fragment"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toEndOf="@+id/trailer_insuarance_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_size_response_rent_trailer_fragment" />
+
+            <ImageView
+                android:id="@+id/trailer_service_response_rent_trailer_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/trailer_insuarance_response_rent_trailer_fragment"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/trailer_service_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_insuarance_response_rent_trailer_fragment"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/licensee_photo_rent_trailer_fragment"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_tare_rent_trailer_fragment"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/licensee_name_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/licensee_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/trailer_name_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/licensee_name_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailler_rating_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_rating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.103"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_image_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_description_rent_trailer_fragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="@string/trailer_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailler_rating_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_size_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_size_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_description_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_size_response_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/trailer_size_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_description_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_insuarance_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_insurance_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_size_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_service_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_service_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_insuarance_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_age_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_age_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_service_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_capacity_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_capacity_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_age_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_tare_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/trailer_tare_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_capacity_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_age_response_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/trailer_age_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_service_response_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_capacity_response_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/trailer_capacity_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_age_response_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_tare_response_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/trailer_tare_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_capacity_response_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/owner_name_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/licensee_photo_rent_trailer_fragment"
+                app:layout_constraintStart_toEndOf="@+id/licensee_photo_rent_trailer_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/owned_by_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/owned_by_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/trailer_owned_by_text_view"
+                app:layout_constraintStart_toEndOf="@+id/licensee_photo_rent_trailer_fragment"
+                app:layout_constraintTop_toTopOf="@+id/licensee_photo_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_cost_text_view_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/trailer_cost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_owner_rent_trailer_fragment" />
+
+            <TextView
+                android:id="@+id/trailer_cost_rent_trailer_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_cost_text_view_rent_trailer_fragment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

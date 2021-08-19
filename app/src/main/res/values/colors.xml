@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B95FF</color>
+    <color name="colorPrimaryDark">#0033BE</color>
+    <color name="colorAccent">#2B62F8</color>
+
+    <color name="themeDark">#0033BE</color>
+    <color name="themeButton">#002486</color>
+    <color name="themeMedium">#2B62F8</color>
+    <color name="themeLight">#2B95FF</color>
+    <color name="dimGrey">#9B9B9B</color>
+    <color name="rating_orange">#FFFF6C00</color>
+    <color name="cancel_btn">#BABABA</color>
+
+    <color name="white1">#72FFFFFF</color>
+    <color name="new_color">#FF4948</color>
+    <color name="grey_bckg">#EFF1F4</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray1">#b7b7b7</color>
+    <color name="light_black">#1F1F1F</color>
+
+    <color name="group_sub_title_selection">#ffffff</color>
+    <color name="group_sub_title_default">#085E5A5A</color>
+
+    <color name="group_title_selection">#ffffff</color>
+    <color name="group_title_default">#40B4B1B1</color>
+
+    <color name="gray">#9e9e9e</color>
+    <color name="black_overlay">#72000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="grey_background">#e2eaed</color>
+
+    <color name="very_light">#c3c3c3</color>
+    <color name="indicator_light">#d4d5d9</color>
+    <color name="indicator_grey_dark">#A3A1A1</color>
+    <color name="black_800">#2e2e30</color>
+    <color name="hint_text_color">#78909C</color>
+    <color name="snack_bar_normal_background">#455A64</color>
+    <color name="title_color">#55555d</color>
+    <color name="list_view_background">#f4f6f5</color>
+    <color name="high_light_text_green_color">#EE4854</color>
+    <color name="text_orange_color">#FF3D3D</color>
+    <!-- 60% black-->
+    <color name="light_grey_title">#f2f1ef</color>
+    <color name="title_color_bottom">#7d7d7d</color>
+    <color name="brown_gold">#BB991C</color>
+
+    <!-- Colors for red theme -->
+    <color name="mdtp_light_gray">#424242</color>
+    <color name="blue_grey_200">#B0BEC5</color>
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="divider">#1f000000</color>
+    <color name="indicator_unselected">#F1A7A7</color>
+    <color name="lighred">#FFF1A7A7</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_translucent">#dbffffff</color>
+    <color name="new_sell_blur_overlay_color">#6AFFFFFF</color>
+    <color name="white_translucent_1">#f7ffffff</color>
+    <color name="accent">#EE4854</color>
+    <color name="grey_100">#EEEEEE</color>
+    <color name="grey_300">#50BDBDBD</color>
+    <color name="profile_border_color">#CCCCCC</color>
+    <color name="banner_background_data">#90666666</color>
+
+    <color name="blur">#73000000</color>
+
+
+    <color name="gray_background_light">#F5F5F5</color>
+    <color name="gray_background_black">#707070</color>
+    <color name="gray_background_medium">#DEDEDE</color>
+    <color name="text_color_gray">#707070</color>
+    <color name="text_color_user_registration">#A2A2A2</color>
+    <color name="gradient_text_start">#FF2B0A</color>
+    <color name="grey_btn_disabled">#707070</color>
+    <color name="boxColor">#edecec</color>
+
+    <color name="theme_red">#EF3D55</color>
+    <color name="orange_gradient_start">#EF3D55</color>
+    <color name="orange_gradient_end">#EF963D</color>
+    <color name="orange">#FFEC7156</color>
+    <color name="light_orange">#fd9158</color>
+    <color name="red_gradient_start">#b62539</color>
+    <color name="red_gradient_end">#e6722b</color>
+    <color name="green_gradient_start">#61C23F</color>
+    <color name="green_gradient_end">#4FEFF5</color>
+    <color name="yellow">#FFF5B758</color>
+
+
+    <!--//new colors-->
+    <color name="c2_light1_grey">#FAFAFA</color>
+    <color name="c2_light2_grey">#EFF1F4</color>
+    <color name="c2_light22_grey">#FFDAD8D8</color>
+    <color name="c2_light3_grey">#d4d4d4</color>
+    <color name="c2_light33_grey">#ECECEC</color>
+    <color name="c2_dark1_grey">#c4c4c4</color>
+    <color name="c2_dark2_grey">#888c8d</color>
+    <color name="c2_dark3_grey">#76848b</color>
+    <color name="c2_dark4_grey">#939393</color>
+    <color name="c2_dark5_grey">#515c6f</color>
+    <color name="c2_black">#242c37</color>
+    <color name="c2_black_lighter">#4E5661</color>
+    <color name="light_grey">#f4f5f7</color>
+    <color name="c2_text_grey">#76848B</color>
+    <color name="c2_text_grey1">#7a7a7a</color>
+    <color name="c2_light_red">#ff3651</color>
+    <color name="c2_dark_red">#EF3D55</color>
+    <color name="red_light">#33EF3D55</color>
+    <color name="c2_dark_red1">#ef3d55</color>
+    <color name="border_orange_dark">#F88565</color>
+    <color name="c2_dark_green">#1c9056</color>
+    <color name="c2_light_green">#00c853</color>
+    <color name="c2_light_green_tags">#BFFFE9</color>
+    <color name="c3_light_green_bg">#C8FFD7</color>
+    <color name="c3_light_green_bg2">#37FFBB</color>
+    <color name="c3_light_green_dot_color">#3BD66A</color>
+    <color name="green_venom">#209EA2</color>
+    <color name="c3_green_price_off">#4FBC36</color>
+    <color name="dash_color">#A1A1A1</color>
+    <color name="yellow_blakish">#C9C436</color>
+    <color name="faint_green_white">#D8FFE8</color>
+
+    <color name="c2_light2_green">#d5ffe7</color>
+    <color name="c2_green_text">#2AB533</color>
+    <color name="green_analy_text">#2AB533</color><!--00FF6A-->
+    <color name="c2_light2_red">#FFFFF6EF</color>
+    <color name="c2_text_red">#EF3D55</color>
+    <color name="c2_text_black">#272727</color>
+    <color name="c2_text_bright_red">#FF3B3B</color>
+    <color name="c2_text_bright_red_tags">#EF3E56</color>
+    <color name="yellow_star">#D8DC58</color>
+    <color name="yellow_tag">#C3D146</color>
+    <color name="semi_transparent">#30000000</color>
+    <color name="dark_transparent">#60000000</color>
+    <color name="dark2_transparent">#95000000</color>
+    <color name="translucent">#08000000</color>
+    <color name="c3_grey_76848B">#76848B</color>
+    <color name="placeholder_bg">#EFF1F4</color>
+    <color name="shimmerColor">#EFF1F4</color>
+    <color name="skelton_color">#dcdcdc</color>
+
+    <color name="golden">#fbffdf00</color>
+    <color name="golden_light">#e48e8e</color>
+    <color name="golden_light2">#efdf97</color>
+
+    <color name="blue">#0033BE</color>
+    <color name="sky_blue">#2B95FF</color>
+    <color name="grey">#FAFAFA</color>
+
+</resources>

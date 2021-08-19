@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lytTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/ui_10_dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ui_10_dp"
+                    android:src="@drawable/ic_arrow_left_black" />
+
+                <com.applutions.t2y.customViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="TRACK TRAILER"
+                    android:textColor="@color/themeLight"
+                    android:textSize="@dimen/text_12_sp" />
+
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Trailer Day !"
+                    android:textColor="@color/themeDark"
+                    android:textSize="@dimen/text_22_sp" />
+
+            </LinearLayout>
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@id/lytTop"
+                android:layout_marginTop="@dimen/ui_20_dp"
+                android:layout_marginBottom="@dimen/ui_20_dp" />
+            <LinearLayout
+                android:id="@+id/lytBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/map"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/ui_15_dp">
+
+
+                <com.applutions.t2y.customViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_20_dp"
+                    android:gravity="center_horizontal"
+                    android:text="Your trailer is"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12_sp" />
+
+                <com.applutions.t2y.customViews.BoldTextView
+                    android:id="@+id/txtEsimatedTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="12 minutes away"
+                    android:textColor="@color/themeDark"
+                    android:textSize="@dimen/text_24_sp"
+                    android:layout_margin="@dimen/ui_10_dp"/>
+                <RelativeLayout
+                    android:id="@+id/lytRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/drawable_circle_white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_refresh"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/ui_15_dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

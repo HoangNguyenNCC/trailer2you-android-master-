@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/ui_15_dp"
+    android:layout_marginTop="@dimen/ui_10_dp"
+    android:layout_marginEnd="@dimen/ui_15_dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/round_square_white_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/trailer_image_search"
+            android:layout_width="@dimen/ui_80_dp"
+            android:layout_height="@dimen/ui_80_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/upsell_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello world"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/search_upsell_bg"
+                    app:layout_constraintEnd_toEndOf="@id/trailer_image_search"
+                    app:layout_constraintStart_toStartOf="@id/trailer_image_search"
+                    app:layout_constraintBottom_toBottomOf="@id/trailer_image_search" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/StatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_search_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="100 AUD"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_dist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waiting for approval"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_12_sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/StatusText">
+                <TextView
+                    android:id="@+id/tv_search_trailer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trailer Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize = "14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_licensee_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Licensee Name"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_12_sp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

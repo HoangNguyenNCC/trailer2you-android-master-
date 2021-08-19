@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_ratings_give"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/avenirnext_demibold"
+        android:letterSpacing=".14"
+        android:text="Rental Complete"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_trailer_returned"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/newyorkextralargemedium"
+        android:text="You returned the trailer!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ratings_give"/>
+
+    <TextView
+        android:id="@+id/tv_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:text="How was the experience ?"
+        android:textAllCaps="true"
+        android:fontFamily="@font/avenirnext_demibold"
+        android:letterSpacing="0.14"
+        app:layout_constraintStart_toStartOf="@id/tv_trailer_returned"
+        app:layout_constraintEnd_toEndOf="@id/tv_trailer_returned"
+        app:layout_constraintTop_toBottomOf="@id/tv_trailer_returned"/>
+
+    <RatingBar
+        android:id="@+id/ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        style="@style/RatingBar"
+        android:stepSize="1"
+        app:layout_constraintStart_toStartOf="@id/tv_trailer_returned"
+        app:layout_constraintEnd_toEndOf="@id/tv_trailer_returned"
+        app:layout_constraintTop_toBottomOf="@id/tv_experience"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/review_layout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratings"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:hint="Write a review"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/submit_feedback_button"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dark_rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_layout"
+        app:layout_constraintVertical_bias="0.683"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Submit Feedback"
+        android:textAllCaps="false"
+        app:finalCornerAngle="50dp"
+        app:initialCornerAngle="50dp"
+        app:spinning_bar_color="#FFFFFF"
+        app:spinning_bar_padding="0dp"
+        app:spinning_bar_width="3dp"/>
+
+    <TextView
+        android:id="@+id/skip_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Skip Feedback"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_12_sp"
+        android:padding="@dimen/ui_12_dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_feedback_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
